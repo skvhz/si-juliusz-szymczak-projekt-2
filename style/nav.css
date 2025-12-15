@@ -1,0 +1,92 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid gray;
+  width: 300px;
+  height: 100vh;
+  padding: 20px 30px;
+  bottom: 0;
+}
+
+nav > div.logo {
+  display: flex;
+  padding: 40px 10px;
+  align-items: center;
+  font-weight: 500;
+  gap: 20px;
+  font-size: 1.5rem;
+}
+
+div.logo > img {
+  height: 30px;
+  width: 30px;
+}
+
+nav > div.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+nav ul > li {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding-block: 10px;
+}
+nav ul > span {
+  font-weight: 500;
+  color: var(--light-gray);
+  margin-bottom: 10px;
+}
+
+nav > div.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  gap: 10px;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 10px;
+  margin-inline: 15px;
+}
+
+nav #name {
+  font-weight: 500;
+}
+
+nav #info {
+  color: var(--light-gray);
+  font-size: 0.85rem;
+}
+
+div.user > img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+nav > div.user a {
+  font-weight: 500;
+  background: #f6f6f6;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#idk {
+  text-align: center;
+  color: var(--light-gray);
+  margin-top: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
