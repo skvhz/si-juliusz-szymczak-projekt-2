@@ -5,6 +5,10 @@ main {
   width: 100vw;
 }
 
+#menu {
+  display: none;
+}
+
 div.bar {
   display: flex;
   gap: 20px;
@@ -119,24 +123,15 @@ div.product span {
   font-weight: 500;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   nav {
-    min-width: none;
-  }
-
-  li > span {
     display: none;
   }
 
-  div.logo > span {
-    display: none;
-  }
-
-  div.user * {
-    display: none;
-  }
-
-  #idk {
-    display: none;
+  #menu {
+    display: flex;
+    position: fixed;
+    left: 10px;
+    top: 30px;
   }
 }
