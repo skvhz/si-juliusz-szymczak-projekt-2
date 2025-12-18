@@ -40,7 +40,9 @@ nav ul > li {
   display: flex;
   gap: 15px;
   align-items: center;
-  padding-block: 10px;
+  padding: 10px 10px;
+  flex-grow: 1;
+  border-radius: 15px;
 }
 nav ul > span {
   font-weight: 500;
@@ -52,11 +54,11 @@ nav > div.user {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 70px;
   gap: 10px;
   background: var(--white);
   border-radius: 20px;
-  padding: 10px;
+  padding: 10px 15px;
+  margin-top: auto;
 }
 
 nav #name {
@@ -90,4 +92,14 @@ nav > div.user a {
   margin-top: 15px;
   font-size: 0.8rem;
   font-weight: 500;
+}
+
+li:hover {
+  background: var(--orange);
+  transition: 0.2s;
+  scale: 1.05;
+}
+li:active {
+  scale: 0.95;
+  transition: 0.2s;
 }

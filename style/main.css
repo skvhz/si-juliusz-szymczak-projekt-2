@@ -51,13 +51,15 @@ div.bar > div.left {
 div.search {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  padding: 10px 14px;
+  padding-block: 8px;
   border-radius: 20px;
   background: var(--secondary-color);
   font-size: 0.9rem;
   width: 150px;
   color: var(--light-gray);
+  font-weight: 500;
 }
 
 header {
@@ -92,6 +94,7 @@ div.product {
   background: var(--white);
   border-radius: 30px;
   padding: 20px 10px;
+  flex-grow: 1;
 }
 
 div.product > img {
@@ -124,6 +127,10 @@ div.product span {
 }
 
 @media (max-width: 800px) {
+  body {
+    margin-top: 0;
+  }
+
   nav {
     display: none;
   }
@@ -132,6 +139,33 @@ div.product span {
     display: flex;
     position: fixed;
     left: 10px;
-    top: 30px;
+    top: 50px;
+  }
+
+  div.bar {
+    top: 40px;
+    padding-top: 0;
+  }
+}
+
+@media (max-height: 700px) {
+  body {
+    margin-top: 0;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+    position: fixed;
+    left: 10px;
+    top: 50px;
+  }
+
+  div.bar {
+    top: 40px;
+    padding-top: 0;
   }
 }
